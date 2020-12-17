@@ -1,0 +1,26 @@
+<!DOCTYPE innerHTML>
+<html>
+
+  <script src="addon/import.js"></script>
+  <div w3-include-html="addon/identical_elements.html"></div>
+
+  <p style="margin-bottom: 0px;">Thank you for the support!</p>
+  <h1 id="countvar"> 0 </h1>
+  <h3> people have liked this content.</h3>
+  
+  <script type="text/javascript">
+
+    includeHTML()
+    
+    const countEl = document.getElementById('countvar');
+
+    function updateVisitCount() {
+      fetch('https://api.countapi.xyz/update/newspageaics/just42ikrbigbruh/?amount=1')
+      .then(res => res.json())
+      .then(res => {countEl.innerHTML = res.value;});
+    }
+
+    updateVisitCount();
+  </script>
+
+</html>
