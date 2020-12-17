@@ -1,5 +1,4 @@
-  <head>
-
+   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>AICS NEWS</title>
@@ -34,24 +33,24 @@
             NOTES 
           </a></span></button>
 
+          <button class="button"><span><a href="views.html">
+            I LIKE YOUR WEBSITE!
+          </a></span></button>
+
          </ul>
       </div>
     </div>
   </head>
 
-  <h3 style="text-align:center;">NewsWeb Views</h3>
-  <h1 id="countvar" style="text-align:center"> 0 </h1>
+  <div id="share-buttons" style="z-index: 3; position: fixed; right:2%; top: 25%; transform: translate(0% -50%);width: 35px;"> 
+    <!-- Facebook --> <a href="https://www.facebook.com/sharer.php?u=https://aics-news.com" target="_blank"><img src="https://4.bp.blogspot.com/-raFYZvIFUV0/UwNI2ek6i3I/AAAAAAAAGSA/zs-kwq0q58E/s1600/facebook.png" alt="Facebook" /></a> 
 
-<script type="text/javascript">
+    <!-- Twitter --> <a href="https://twitter.com/share?url=https://aics-news.com&text=A cool intresting news website from AICS!" target="_blank"><img src="https://4.bp.blogspot.com/--ISQEurz3aE/UwNI4hDaQMI/AAAAAAAAGS4/ZAgmPiM9Xpk/s1600/twitter.png" alt="Twitter" /></a>
 
-  const countEl = document.getElementById('countvar');
+    <!-- Google+ --> <a href="https://plus.google.com/share?url=aics-news.com" target="_blank"><img src="https://2.bp.blogspot.com/-9ijXNtKTaSk/UwNI3ANT4MI/AAAAAAAAGSY/Tu4kE8x9SnI/s1600/google.png" alt="Google" /></a> 
+    
+    <!-- Reddit --> <a href="http://reddit.com/submit?url=aics-news.com&title=A cool intresting news website from AICS!" target="_blank"><img src="https://4.bp.blogspot.com/-1-mZEa1eiyc/UwNI4JytiFI/AAAAAAAAGSs/AoKmBkkJR-s/s1600/reddit.png" alt="Reddit" /></a> 
+    
+    <!-- Email --> <a href="mailto:?Subject=AICS-NEWS&Body=https://aics-news.nl"><img src="https://4.bp.blogspot.com/-njgKtNLrPqI/UwNI2o-9WfI/AAAAAAAAGR4/f8da1gBgyLs/s1600/email.png" alt="Email" /></a> 
 
-  updateVisitCount();
-
-  function updateVisitCount() {
-    fetch('https://api.countapi.xyz/update/aics-news/studentaics/?amount=1')
-    .then(res => res.json())
-    .then(res => {countEl.innerHTML = res.value;});
-  }
-
-</script>
+    <!-- Copy --><a href="copy.html"><img class="copybutton" style="cursor: pointer;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Circle-icons-clipboard.svg/1024px-Circle-icons-clipboard.svg.png"></a>
