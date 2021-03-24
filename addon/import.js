@@ -8,6 +8,7 @@ function includeHTML() {
     file = elmnt.getAttribute("w3-include-html");
     if (file) {
       /* Make an HTTP request using the attribute value as the file name: */
+      
       xhttp = new XMLHttpRequest();
       xhttp.onreadystatechange = function() {
         if (this.readyState == 4) {
